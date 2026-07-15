@@ -411,6 +411,7 @@
                         <script>
                             function openInfographicAtracao() {
                                 const modal = document.getElementById('infografico-modal');
+                                const modalInner = document.getElementById('infografico-modal-content');
                                 const modalContainer = document.getElementById('modal-svg-container');
                                 const originalSvg = document.getElementById('infografico-atracao').outerHTML;
                                 
@@ -419,21 +420,25 @@
                                 
                                 modal.classList.remove('hidden', 'pointer-events-none');
                                 modal.classList.add('flex');
-                                setTimeout(() => modal.classList.remove('opacity-0'), 10);
+                                setTimeout(() => {
+                                    modal.classList.remove('opacity-0');
+                                    modalInner.classList.remove('translate-y-24', 'scale-95', 'opacity-0');
+                                    modalInner.classList.add('translate-y-0', 'scale-100', 'opacity-100');
+                                }, 10);
                             }
                         </script>
                     </article>
-                    <article class="apple-card border-gradient p-8 relative group">
+                    <article data-topic="s3-2" class="topic-trigger apple-card border-gradient p-8 relative group cursor-pointer hover:border-blue-500/30 transition-colors">
                         <h4 class="text-xl mb-3 font-medium bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent pr-10">Produção e design de criativos, estáticos e em vídeo.</h4>
                         <p class="text-white/80 text-sm leading-relaxed">Peças gráficas e vídeos usados nos anúncios, com roteirização, direção criativa e variações desenvolvidas para teste.</p>
-                        <button data-topic="s3-2" class="topic-trigger absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
+                        <button class="absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:bg-blue-500/20 group-hover:border-blue-500/40" title="Expandir">
                             <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
                         </button>
                     </article>
-                    <article class="apple-card border-gradient p-8 relative group">
+                    <article data-topic="s3-3" class="topic-trigger apple-card border-gradient p-8 relative group cursor-pointer hover:border-blue-500/30 transition-colors">
                         <h4 class="text-xl mb-3 font-medium bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent pr-10">Linha editorial com cerca de 10 conteúdos orgânicos.</h4>
                         <p class="text-white/80 text-sm leading-relaxed">Estruturada para sustentar a autoridade do sócio à frente do conteúdo, aquecendo a audiência.</p>
-                        <button data-topic="s3-3" class="topic-trigger absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
+                        <button class="absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:bg-blue-500/20 group-hover:border-blue-500/40" title="Expandir">
                             <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
                         </button>
                     </article>
@@ -554,24 +559,24 @@
                 </div>
 
                 <div class="flex flex-col gap-6">
-                    <article class="apple-card border-gradient p-8 relative group">
+                    <article data-topic="s4-1" class="topic-trigger apple-card border-gradient p-8 relative group cursor-pointer hover:border-blue-500/30 transition-colors">
                         <h4 class="text-xl mb-3 font-medium bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent pr-10">Landing page principal com VSL.</h4>
                         <p class="text-white/80 text-sm leading-relaxed">Copy, design e construção da página que recebe o tráfego, incluindo a transição direta para o WhatsApp.</p>
-                        <button data-topic="s4-1" class="topic-trigger absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
+                        <button class="absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:bg-blue-500/20 group-hover:border-blue-500/40" title="Expandir">
                             <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
                         </button>
                     </article>
-                    <article class="apple-card border-gradient p-8 relative group">
+                    <article data-topic="s4-2" class="topic-trigger apple-card border-gradient p-8 relative group cursor-pointer hover:border-blue-500/30 transition-colors">
                         <h4 class="text-xl mb-3 font-medium bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent pr-10">Estruturação completa do roteiro da mini aula.</h4>
                         <p class="text-white/80 text-sm leading-relaxed">Desenvolvimento de começo, meio e fim, pensado para gerar consciência sobre o processo de credenciamento.</p>
-                        <button data-topic="s4-2" class="topic-trigger absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
+                        <button class="absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:bg-blue-500/20 group-hover:border-blue-500/40" title="Expandir">
                             <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
                         </button>
                     </article>
-                    <article class="apple-card border-gradient p-8 relative group">
+                    <article data-topic="s4-3" class="topic-trigger apple-card border-gradient p-8 relative group cursor-pointer hover:border-blue-500/30 transition-colors">
                         <h4 class="text-xl mb-3 font-medium bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent pr-10">Mecanismos de qualificação e variações de funil.</h4>
                         <p class="text-white/80 text-sm leading-relaxed">As perguntas respondidas antes da mini aula funcionam como filtro de perfil e fonte de dados. Essa estrutura de captação é testada em paralelo através de diferentes variações para validar o caminho mais eficiente.</p>
-                        <button data-topic="s4-3" class="topic-trigger absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
+                        <button class="absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:bg-blue-500/20 group-hover:border-blue-500/40" title="Expandir">
                             <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
                         </button>
                     </article>
@@ -689,33 +694,33 @@
                 <div class="lg:col-span-5 flex flex-col justify-center lg:pl-6">
                     <h3 class="text-2xl font-medium text-white mb-6 tracking-tight">Os Entregáveis</h3>
                     <ul class="flex flex-col gap-6">
-                        <li class="flex items-start gap-4 relative group p-4 rounded-xl -mx-4 hover:bg-white/5 transition-colors">
+                        <li data-topic="s5-1" class="topic-trigger flex items-start gap-4 relative group p-4 rounded-xl -mx-4 cursor-pointer hover:bg-white/10 transition-colors">
                             <span class="mt-1 text-blue-400 bg-blue-500/10 rounded-full w-6 h-6 flex items-center justify-center shrink-0 border border-blue-500/20"><i class="fi fi-rr-check text-xs"></i></span>
                             <div class="pr-10">
                                 <h4 class="text-white font-medium mb-1">Implementação e estruturação do CRM com pipeline.</h4>
                                 <p class="text-white/80 text-sm leading-relaxed">Desenhado para o processo da equipe, com os leads organizados por responsável e etapa.</p>
                             </div>
-                            <button data-topic="s5-1" class="topic-trigger absolute top-4 right-4 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
+                            <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:bg-blue-500/20 group-hover:border-blue-500/40" title="Expandir">
                                 <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
                             </button>
                         </li>
-                        <li class="flex items-start gap-4 relative group p-4 rounded-xl -mx-4 hover:bg-white/5 transition-colors">
+                        <li data-topic="s5-2" class="topic-trigger flex items-start gap-4 relative group p-4 rounded-xl -mx-4 cursor-pointer hover:bg-white/10 transition-colors">
                             <span class="mt-1 text-blue-400 bg-blue-500/10 rounded-full w-6 h-6 flex items-center justify-center shrink-0 border border-blue-500/20"><i class="fi fi-rr-check text-xs"></i></span>
                             <div class="pr-10">
                                 <h4 class="text-white font-medium mb-1">Apoio consultivo nos scripts de atendimento.</h4>
                                 <p class="text-white/80 text-sm leading-relaxed">Contribuição na abordagem inicial, condução até a reunião e tratamento de objeções.</p>
                             </div>
-                            <button data-topic="s5-2" class="topic-trigger absolute top-4 right-4 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
+                            <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:bg-blue-500/20 group-hover:border-blue-500/40" title="Expandir">
                                 <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
                             </button>
                         </li>
-                        <li class="flex items-start gap-4 relative group p-4 rounded-xl -mx-4 hover:bg-white/5 transition-colors">
+                        <li data-topic="s5-3" class="topic-trigger flex items-start gap-4 relative group p-4 rounded-xl -mx-4 cursor-pointer hover:bg-white/10 transition-colors">
                             <span class="mt-1 text-blue-400 bg-blue-500/10 rounded-full w-6 h-6 flex items-center justify-center shrink-0 border border-blue-500/20"><i class="fi fi-rr-check text-xs"></i></span>
                             <div class="pr-10">
                                 <h4 class="text-white font-medium mb-1">Estruturação do processo comercial e follow-up.</h4>
                                 <p class="text-white/80 text-sm leading-relaxed">Endereçando o ponto onde historicamente mais se perde venda: a condução contínua dos leads.</p>
                             </div>
-                            <button data-topic="s5-3" class="topic-trigger absolute top-4 right-4 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
+                            <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:bg-blue-500/20 group-hover:border-blue-500/40" title="Expandir">
                                 <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
                             </button>
                         </li>
@@ -890,11 +895,11 @@
             </div>
 
             <!-- Infográfico Modal -->
-            <div id="infografico-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 lg:p-12 transition-all opacity-0 pointer-events-none" style="transition: opacity 0.3s ease;">
-                <button onclick="closeInfographic()" class="absolute top-6 right-6 lg:top-10 lg:right-10 w-12 h-12 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-red-500/30 transition-all z-10">
+            <div id="infografico-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/40 backdrop-blur-xl p-4 lg:p-12 transition-all duration-500 opacity-0 pointer-events-none" onclick="closeInfographic()">
+                <button onclick="closeInfographic()" class="absolute top-6 right-6 lg:top-10 lg:right-10 w-12 h-12 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-red-500/30 transition-all z-[110] backdrop-blur-md">
                     <i class="fi fi-rr-cross text-xl pointer-events-none"></i>
                 </button>
-                <div class="w-full max-w-7xl max-h-[90vh] bg-black/60 border border-white/10 rounded-2xl p-6 lg:p-12 overflow-auto shadow-2xl relative">
+                <div id="infografico-modal-content" class="apple-card border-gradient-panel w-full max-w-7xl max-h-[90vh] bg-white/10 backdrop-blur-3xl border border-white/20 rounded-2xl p-6 lg:p-12 overflow-auto shadow-[0_30px_100px_rgba(0,0,0,0.6)] relative transform translate-y-24 scale-95 transition-all duration-500 ease-out opacity-0" onclick="event.stopPropagation()">
                     <div id="modal-svg-container" class="w-full h-full flex items-center justify-center min-w-[800px]">
                         <!-- SVG injected here via JS -->
                     </div>
@@ -904,6 +909,7 @@
             <script>
                 function openInfographic() {
                     const modal = document.getElementById('infografico-modal');
+                    const modalInner = document.getElementById('infografico-modal-content');
                     const modalContainer = document.getElementById('modal-svg-container');
                     const originalSvg = document.getElementById('infografico-inteligencia').outerHTML;
                     
@@ -915,16 +921,25 @@
                     
                     modal.classList.remove('hidden', 'pointer-events-none');
                     modal.classList.add('flex');
-                    setTimeout(() => modal.classList.remove('opacity-0'), 10);
+                    setTimeout(() => {
+                        modal.classList.remove('opacity-0');
+                        modalInner.classList.remove('translate-y-24', 'scale-95', 'opacity-0');
+                        modalInner.classList.add('translate-y-0', 'scale-100', 'opacity-100');
+                    }, 10);
                 }
                 function closeInfographic() {
                     const modal = document.getElementById('infografico-modal');
+                    const modalInner = document.getElementById('infografico-modal-content');
+                    
                     modal.classList.add('opacity-0');
+                    modalInner.classList.add('translate-y-24', 'scale-95', 'opacity-0');
+                    modalInner.classList.remove('translate-y-0', 'scale-100', 'opacity-100');
+                    
                     setTimeout(() => {
                         modal.classList.remove('flex');
                         modal.classList.add('hidden', 'pointer-events-none');
                         document.getElementById('modal-svg-container').innerHTML = '';
-                    }, 300);
+                    }, 500);
                 }
             </script>
         </main>
