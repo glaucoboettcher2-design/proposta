@@ -1239,8 +1239,8 @@
     </script>
 
     <!-- Modal/Overlay de Expansão dos Tópicos Global -->
-    <div id="topic-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 lg:p-12 pointer-events-none opacity-0 transition-all duration-300 backdrop-blur-xl bg-black/20">
-        <div id="topic-modal-content" class="apple-card border-gradient w-full max-w-4xl max-h-[85vh] overflow-y-auto p-10 bg-[#0a0a0c]/95 transform scale-95 transition-transform duration-300 shadow-[0_0_50px_rgba(59,130,246,0.15)] ring-1 ring-white/10 relative" onclick="event.stopPropagation()">
+    <div id="topic-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 lg:p-12 pointer-events-none opacity-0 transition-all duration-500 backdrop-blur-xl bg-black/40">
+        <div id="topic-modal-content" class="apple-card border-gradient-panel w-full max-w-4xl max-h-[85vh] overflow-y-auto p-10 lg:p-16 bg-white/10 backdrop-blur-3xl transform translate-y-24 scale-95 opacity-0 transition-all duration-500 ease-out shadow-[0_30px_100px_rgba(0,0,0,0.6)] border border-white/20 relative" onclick="event.stopPropagation()">
             <!-- Conteúdo expandido será injetado aqui pelo JS -->
         </div>
     </div>
@@ -1312,8 +1312,8 @@
                             modalContent.innerHTML = template.innerHTML;
                             modal.classList.remove('opacity-0', 'pointer-events-none');
                             modal.classList.add('opacity-100', 'pointer-events-auto');
-                            modalContent.classList.remove('scale-95');
-                            modalContent.classList.add('scale-100');
+                            modalContent.classList.remove('translate-y-24', 'scale-95', 'opacity-0');
+                            modalContent.classList.add('translate-y-0', 'scale-100', 'opacity-100');
                         }
                     });
                 });
@@ -1322,8 +1322,8 @@
                 modal.addEventListener('click', () => {
                     modal.classList.add('opacity-0', 'pointer-events-none');
                     modal.classList.remove('opacity-100', 'pointer-events-auto');
-                    modalContent.classList.add('scale-95');
-                    modalContent.classList.remove('scale-100');
+                    modalContent.classList.add('translate-y-24', 'scale-95', 'opacity-0');
+                    modalContent.classList.remove('translate-y-0', 'scale-100', 'opacity-100');
                 });
             }
         });
