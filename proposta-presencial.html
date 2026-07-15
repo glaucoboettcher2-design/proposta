@@ -562,101 +562,107 @@
 
     <!-- Slide 5: Operação (Atendimento e CRM) -->
     <section class="slide-container">
-        <main class="apple-panel border-gradient-panel w-full max-w-[1300px] min-h-[750px] p-10 lg:p-16 flex flex-col justify-center relative z-10">
+        <main class="apple-panel border-gradient-panel w-full max-w-[1300px] min-h-[600px] p-10 lg:p-12 flex flex-col justify-center relative z-10">
             
             <!-- Top Header -->
-            <div class="mb-12 w-full max-w-5xl">
+            <div class="mb-8 w-full max-w-5xl">
                 <div class="flex items-center text-[13px] sm:text-sm font-medium uppercase tracking-tight text-blue-400 mb-3 gap-4">
                     <span>Operação</span>
                     <div class="h-px flex-grow bg-gradient-to-r from-blue-400/30 to-transparent"></div>
                     <span>(04)</span>
                 </div>
                 <h2 class="text-4xl md:text-5xl mb-4 font-semibold text-white">Atendimento e vendas</h2>
-                <p class="text-xl text-white font-medium mb-3 tracking-tight">Organização completa do processo comercial.</p>
-                <p class="text-lg text-neutral-300 font-light leading-relaxed max-w-3xl">
-                    Os leads chegam ao WhatsApp e são organizados em um CRM com pipeline desenhado para o processo da equipe. Cada lead tem responsável definido, etapa clara e cadência de acompanhamento, garantindo que nenhuma oportunidade se perca por falta de follow-up.
+                <p class="text-lg text-neutral-300 font-light leading-relaxed max-w-4xl">
+                    <strong class="text-white font-medium text-xl mr-1">Organização completa do processo comercial.</strong> Os leads chegam ao WhatsApp e são organizados em um CRM com pipeline desenhado para o processo da equipe. Cada lead tem responsável definido, etapa clara e cadência de acompanhamento, garantindo que nenhuma oportunidade se perca por falta de follow-up.
                 </p>
             </div>
 
             <!-- Bottom Section: 2 Columns -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 w-full items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 w-full items-center">
                 
-                <!-- Graphic (SVG Kanban) -->
-                <div class="lg:col-span-7 apple-card border-gradient p-6 lg:p-8 bg-black/20 flex items-center justify-center h-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" class="w-full h-auto max-h-[400px]">
-                        <defs>
-                            <!-- Definição de um card padrão com efeito Glass para fundos escuros -->
-                            <g id="crm-card">
-                            <rect x="0" y="0" width="156" height="68" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" rx="8" />
-                            <rect x="12" y="14" width="40" height="4" fill="rgba(255, 255, 255, 0.8)" rx="2" />
-                            <rect x="12" y="28" width="110" height="3" fill="rgba(255, 255, 255, 0.3)" rx="1.5" />
-                            <rect x="12" y="38" width="80" height="3" fill="rgba(255, 255, 255, 0.3)" rx="1.5" />
-                            <!-- Ícone de perfil simulado -->
-                            <circle cx="20" cy="52" r="6" fill="rgba(255, 255, 255, 0.2)" />
-                            <path d="M14 58 Q20 48 26 58" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2" fill="none" stroke-linecap="round"/>
-                            <!-- Tag indicadora -->
-                            <rect x="116" y="44" width="28" height="14" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.2)" rx="4" />
+                <!-- Graphic (SVG Kanban) & Note -->
+                <div class="lg:col-span-7 flex flex-col gap-4">
+                    <div class="apple-card border-gradient p-4 lg:p-6 bg-black/20 flex items-center justify-center w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" class="w-full h-auto max-h-[320px]">
+                            <defs>
+                                <!-- Definição de um card padrão com efeito Glass para fundos escuros -->
+                                <g id="crm-card">
+                                <rect x="0" y="0" width="156" height="68" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" rx="8" />
+                                <rect x="12" y="14" width="40" height="4" fill="rgba(255, 255, 255, 0.8)" rx="2" />
+                                <rect x="12" y="28" width="110" height="3" fill="rgba(255, 255, 255, 0.3)" rx="1.5" />
+                                <rect x="12" y="38" width="80" height="3" fill="rgba(255, 255, 255, 0.3)" rx="1.5" />
+                                <!-- Ícone de perfil simulado -->
+                                <circle cx="20" cy="52" r="6" fill="rgba(255, 255, 255, 0.2)" />
+                                <path d="M14 58 Q20 48 26 58" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <!-- Tag indicadora -->
+                                <rect x="116" y="44" width="28" height="14" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.2)" rx="4" />
+                                </g>
+                                <!-- Variação do card com linhas de tamanhos diferentes -->
+                                <g id="crm-card-2">
+                                <rect x="0" y="0" width="156" height="68" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" rx="8" />
+                                <rect x="12" y="14" width="30" height="4" fill="rgba(255, 255, 255, 0.8)" rx="2" />
+                                <rect x="12" y="28" width="120" height="3" fill="rgba(255, 255, 255, 0.3)" rx="1.5" />
+                                <rect x="12" y="38" width="95" height="3" fill="rgba(255, 255, 255, 0.3)" rx="1.5" />
+                                <circle cx="20" cy="52" r="6" fill="rgba(255, 255, 255, 0.2)" />
+                                <path d="M14 58 Q20 48 26 58" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <rect x="116" y="44" width="28" height="14" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.2)" rx="4" />
+                                </g>
+                            </defs>
+
+                            <style>
+                                .col-title { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 500; fill: rgba(255, 255, 255, 0.9); }
+                                .col-bg { fill: rgba(255, 255, 255, 0.02); stroke: rgba(255, 255, 255, 0.08); stroke-width: 1; rx: 8px; }
+                            </style>
+
+                            <!-- Coluna 1: Novo Lead -->
+                            <g transform="translate(0, 0)">
+                                <text x="10" y="20" class="col-title">1. Novo Lead</text>
+                                <rect x="0" y="36" width="176" height="440" class="col-bg" />
+                                <use href="#crm-card" x="10" y="48" />
+                                <use href="#crm-card-2" x="10" y="128" />
+                                <use href="#crm-card" x="10" y="208" />
                             </g>
-                            <!-- Variação do card com linhas de tamanhos diferentes -->
-                            <g id="crm-card-2">
-                            <rect x="0" y="0" width="156" height="68" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" rx="8" />
-                            <rect x="12" y="14" width="30" height="4" fill="rgba(255, 255, 255, 0.8)" rx="2" />
-                            <rect x="12" y="28" width="120" height="3" fill="rgba(255, 255, 255, 0.3)" rx="1.5" />
-                            <rect x="12" y="38" width="95" height="3" fill="rgba(255, 255, 255, 0.3)" rx="1.5" />
-                            <circle cx="20" cy="52" r="6" fill="rgba(255, 255, 255, 0.2)" />
-                            <path d="M14 58 Q20 48 26 58" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2" fill="none" stroke-linecap="round"/>
-                            <rect x="116" y="44" width="28" height="14" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.2)" rx="4" />
+
+                            <!-- Coluna 2: Em Conversa -->
+                            <g transform="translate(196, 0)">
+                                <text x="10" y="20" class="col-title">2. Em Conversa</text>
+                                <rect x="0" y="36" width="176" height="440" class="col-bg" />
+                                <use href="#crm-card-2" x="10" y="48" />
+                                <use href="#crm-card" x="10" y="128" />
+                                <use href="#crm-card-2" x="10" y="208" />
                             </g>
-                        </defs>
 
-                        <style>
-                            .col-title { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 500; fill: rgba(255, 255, 255, 0.9); }
-                            .col-bg { fill: rgba(255, 255, 255, 0.02); stroke: rgba(255, 255, 255, 0.08); stroke-width: 1; rx: 8px; }
-                        </style>
+                            <!-- Coluna 3: Reunião Marcada -->
+                            <g transform="translate(392, 0)">
+                                <text x="10" y="20" class="col-title">3. Reunião Marcada</text>
+                                <rect x="0" y="36" width="176" height="440" class="col-bg" />
+                                <use href="#crm-card" x="10" y="48" />
+                                <use href="#crm-card-2" x="10" y="128" />
+                                <use href="#crm-card" x="10" y="208" />
+                            </g>
 
-                        <!-- Coluna 1: Novo Lead -->
-                        <g transform="translate(0, 0)">
-                            <text x="10" y="20" class="col-title">1. Novo Lead</text>
-                            <rect x="0" y="36" width="176" height="440" class="col-bg" />
-                            <use href="#crm-card" x="10" y="48" />
-                            <use href="#crm-card-2" x="10" y="128" />
-                            <use href="#crm-card" x="10" y="208" />
-                        </g>
+                            <!-- Coluna 4: Em Negociação -->
+                            <g transform="translate(588, 0)">
+                                <text x="10" y="20" class="col-title">4. Em Negociação</text>
+                                <rect x="0" y="36" width="176" height="440" class="col-bg" />
+                                <use href="#crm-card-2" x="10" y="48" />
+                                <use href="#crm-card" x="10" y="128" />
+                            </g>
 
-                        <!-- Coluna 2: Em Conversa -->
-                        <g transform="translate(196, 0)">
-                            <text x="10" y="20" class="col-title">2. Em Conversa</text>
-                            <rect x="0" y="36" width="176" height="440" class="col-bg" />
-                            <use href="#crm-card-2" x="10" y="48" />
-                            <use href="#crm-card" x="10" y="128" />
-                            <use href="#crm-card-2" x="10" y="208" />
-                        </g>
+                            <!-- Coluna 5: Fechado -->
+                            <g transform="translate(784, 0)">
+                                <text x="10" y="20" class="col-title">5. Fechado</text>
+                                <rect x="0" y="36" width="176" height="440" class="col-bg" />
+                                <use href="#crm-card" x="10" y="48" />
+                                <use href="#crm-card-2" x="10" y="128" />
+                            </g>
+                        </svg>
+                    </div>
 
-                        <!-- Coluna 3: Reunião Marcada -->
-                        <g transform="translate(392, 0)">
-                            <text x="10" y="20" class="col-title">3. Reunião Marcada</text>
-                            <rect x="0" y="36" width="176" height="440" class="col-bg" />
-                            <use href="#crm-card" x="10" y="48" />
-                            <use href="#crm-card-2" x="10" y="128" />
-                            <use href="#crm-card" x="10" y="208" />
-                        </g>
-
-                        <!-- Coluna 4: Em Negociação -->
-                        <g transform="translate(588, 0)">
-                            <text x="10" y="20" class="col-title">4. Em Negociação</text>
-                            <rect x="0" y="36" width="176" height="440" class="col-bg" />
-                            <use href="#crm-card-2" x="10" y="48" />
-                            <use href="#crm-card" x="10" y="128" />
-                        </g>
-
-                        <!-- Coluna 5: Fechado -->
-                        <g transform="translate(784, 0)">
-                            <text x="10" y="20" class="col-title">5. Fechado</text>
-                            <rect x="0" y="36" width="176" height="440" class="col-bg" />
-                            <use href="#crm-card" x="10" y="48" />
-                            <use href="#crm-card-2" x="10" y="128" />
-                        </g>
-                    </svg>
+                    <div class="p-4 lg:p-5 bg-white/5 border border-white/10 rounded-xl relative overflow-hidden w-full">
+                        <div class="absolute left-0 top-0 w-1 h-full bg-blue-500/50"></div>
+                        <p class="text-xs lg:text-sm text-white/80 leading-relaxed pl-2">Nota: Atendimento manual pelo WhatsApp Web/App integrado ao CRM garante proximidade sem custos por mensagem, otimizando a conversão.</p>
+                    </div>
                 </div>
 
                 <!-- Entregáveis (List) -->
@@ -694,11 +700,6 @@
                             </button>
                         </li>
                     </ul>
-                    
-                    <div class="mt-10 p-5 bg-white/5 border border-white/10 rounded-xl relative overflow-hidden">
-                        <div class="absolute left-0 top-0 w-1 h-full bg-blue-500/50"></div>
-                        <p class="text-xs lg:text-sm text-white/80 leading-relaxed">Nota: Atendimento manual pelo WhatsApp Web/App integrado ao CRM garante proximidade sem custos por mensagem, otimizando a conversão.</p>
-                    </div>
                 </div>
 
             </div>
