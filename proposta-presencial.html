@@ -464,19 +464,94 @@
                             <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
                         </button>
                     </article>
-                    <article class="apple-card border-gradient p-8 relative group">
-                        <h4 class="text-xl mb-3 font-medium bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent pr-10">Mecanismo de qualificação anterior ao acesso.</h4>
-                        <p class="text-white/80 text-sm leading-relaxed">Perguntas respondidas antes da mini aula, funcionando como filtro de perfil e fonte de dado.</p>
-                        <button data-topic="s4-3" class="topic-trigger absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
-                            <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
-                        </button>
-                    </article>
-                    <article class="apple-card border-gradient p-8 relative group">
-                        <h4 class="text-xl mb-3 font-medium bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent pr-10">Variações de funil para teste.</h4>
-                        <p class="text-white/80 text-sm leading-relaxed">Estrutura alternativa de captação testada em paralelo para validar o caminho mais eficiente com dados reais.</p>
-                        <button data-topic="s4-4" class="topic-trigger absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100" title="Expandir">
-                            <i class="fi fi-rr-expand text-xs pointer-events-none"></i>
-                        </button>
+                    <article class="apple-card border-gradient p-8 relative flex flex-col gap-6">
+                        <div>
+                            <h4 class="text-xl mb-3 font-medium bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">Mecanismos de qualificação e variações de funil para teste.</h4>
+                            <p class="text-white/80 text-sm leading-relaxed">As perguntas respondidas antes da mini aula funcionam como filtro de perfil e fonte de dados. Essa estrutura de captação (seja um formulário simples, Typeform ou quiz) é testada em paralelo através de diferentes variações para validar o caminho mais eficiente.</p>
+                        </div>
+                        
+                        <div class="w-full bg-black/20 rounded-2xl p-6 border border-white/5 shadow-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="100%" height="100%">
+                              <defs>
+                                <!-- Gradiente para as linhas de conexão -->
+                                <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%" stop-color="rgba(255,255,255,0.1)" />
+                                  <stop offset="50%" stop-color="rgba(255,255,255,0.5)" />
+                                  <stop offset="100%" stop-color="rgba(255,255,255,0.1)" />
+                                </linearGradient>
+                              </defs>
+                              
+                              <style>
+                                .title { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: rgba(255, 255, 255, 0.9); }
+                                .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 400; fill: rgba(255, 255, 255, 0.6); }
+                                .card-bg { fill: rgba(255, 255, 255, 0.05); stroke: rgba(255, 255, 255, 0.15); stroke-width: 1; rx: 12px; }
+                                .icon { stroke: rgba(255, 255, 255, 0.8); stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                .inner-box { fill: rgba(255, 255, 255, 0.03); stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; rx: 6px; }
+                              </style>
+
+                              <!-- Linhas de conexão do fluxo -->
+                              <path d="M 240 180 L 280 180" stroke="url(#lineGrad)" stroke-width="2" fill="none" />
+                              <path d="M 470 180 L 510 180" stroke="url(#lineGrad)" stroke-width="2" fill="none" />
+                              <path d="M 700 180 L 740 180" stroke="url(#lineGrad)" stroke-width="2" fill="none" />
+                              
+                              <!-- Setas -->
+                              <polygon points="275,175 285,180 275,185" fill="rgba(255,255,255,0.5)" />
+                              <polygon points="505,175 515,180 505,185" fill="rgba(255,255,255,0.5)" />
+                              <polygon points="735,175 745,180 735,185" fill="rgba(255,255,255,0.5)" />
+
+                              <!-- Bloco 1: Anúncio -->
+                              <g transform="translate(60, 80)">
+                                <rect x="0" y="0" width="180" height="200" class="card-bg" />
+                                <text x="20" y="36" class="title">1. Anúncio</text>
+                                <text x="20" y="56" class="subtitle">Captação de Clique</text>
+                                
+                                <rect x="20" y="80" width="140" height="90" class="inner-box" />
+                                <circle cx="35" cy="95" r="5" class="icon" />
+                                <rect x="45" y="92" width="50" height="3" fill="rgba(255,255,255,0.4)" rx="1.5" />
+                                <rect x="45" y="98" width="30" height="2" fill="rgba(255,255,255,0.2)" rx="1" />
+                                <rect x="30" y="110" width="120" height="40" class="inner-box" fill="rgba(255,255,255,0.05)" />
+                                <rect x="30" y="155" width="120" height="8" fill="rgba(255,255,255,0.1)" rx="2" />
+                              </g>
+
+                              <!-- Bloco 2: Qualificação -->
+                              <g transform="translate(290, 80)">
+                                <rect x="0" y="0" width="180" height="200" class="card-bg" />
+                                <text x="20" y="36" class="title">2. Qualificação</text>
+                                <text x="20" y="56" class="subtitle">Filtro de Perfil</text>
+                                
+                                <rect x="30" y="80" width="120" height="90" class="inner-box" />
+                                <rect x="40" y="95" width="100" height="8" fill="rgba(255,255,255,0.2)" rx="2" />
+                                <rect x="40" y="115" width="100" height="8" fill="rgba(255,255,255,0.2)" rx="2" />
+                                <rect x="40" y="135" width="100" height="8" fill="rgba(255,255,255,0.2)" rx="2" />
+                                <rect x="65" y="155" width="50" height="10" fill="rgba(255,255,255,0.4)" rx="3" />
+                              </g>
+
+                              <!-- Bloco 3: Mini Aula -->
+                              <g transform="translate(520, 80)">
+                                <rect x="0" y="0" width="180" height="200" class="card-bg" />
+                                <text x="20" y="36" class="title">3. Mini Aula (VSL)</text>
+                                <text x="20" y="56" class="subtitle">Consciência</text>
+                                
+                                <rect x="20" y="80" width="140" height="80" class="inner-box" />
+                                <polygon points="80,110 100,120 80,130" fill="rgba(255,255,255,0.8)" />
+                                <rect x="20" y="170" width="140" height="4" fill="rgba(255,255,255,0.1)" rx="2" />
+                              </g>
+
+                              <!-- Bloco 4: WhatsApp -->
+                              <g transform="translate(750, 80)">
+                                <rect x="0" y="0" width="180" height="200" class="card-bg" />
+                                <text x="20" y="36" class="title">4. WhatsApp</text>
+                                <text x="20" y="56" class="subtitle">Contato Direto</text>
+                                
+                                <!-- Ícone de Chat -->
+                                <path d="M 40 100 h 60 a 10 10 0 0 1 10 10 v 20 a 10 10 0 0 1 -10 10 h -40 l -15 15 v -15 a 10 10 0 0 1 -5 -10 v -20 a 10 10 0 0 1 10 -10 z" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+                                <rect x="50" y="115" width="40" height="3" fill="rgba(255,255,255,0.4)" rx="1.5" />
+                                <rect x="50" y="125" width="30" height="3" fill="rgba(255,255,255,0.4)" rx="1.5" />
+
+                                <path d="M 80 130 h 50 a 10 10 0 0 1 10 10 v 20 a 10 10 0 0 1 -10 10 h -5 l 0 15 l -15 -15 h -30 a 10 10 0 0 1 -10 -10 v -20 a 10 10 0 0 1 10 -10 z" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="2,2" />
+                              </g>
+                            </svg>
+                        </div>
                     </article>
                 </div>
             </div>
