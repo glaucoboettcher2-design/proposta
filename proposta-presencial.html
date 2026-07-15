@@ -727,8 +727,8 @@
                 
                 <!-- Graphic (SVG API de Conversão) -->
                 <div class="lg:col-span-7 flex flex-col gap-4">
-                    <div class="apple-card border-gradient p-4 lg:p-6 bg-black/20 flex items-center justify-center w-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" class="w-full h-auto max-h-[350px]">
+                    <div class="apple-card border-gradient p-4 lg:p-6 bg-black/20 flex items-center justify-center w-full relative group">
+                        <svg id="infografico-inteligencia" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" class="w-full h-auto max-h-[350px]">
                             <defs>
                                 <!-- Gradiente que simula o fluxo de dados subindo para o algoritmo -->
                                 <linearGradient id="dataStream" x1="0%" y1="100%" x2="0%" y2="0%">
@@ -748,12 +748,10 @@
                             <!-- Módulo Central: Algoritmo Meta Ads -->
                             <g transform="translate(330, 30)">
                                 <rect x="0" y="0" width="300" height="110" class="card-bg-svg" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)"/>
-                                <!-- Ícone de IA / Processamento -->
-                                <circle cx="150" cy="35" r="16" class="icon-svg"/>
-                                <path d="M 134 35 A 16 16 0 0 0 166 35" class="icon-svg"/>
-                                <circle cx="150" cy="35" r="4" fill="rgba(255,255,255,0.8)"/>
-                                <line x1="120" y1="35" x2="134" y2="35" class="icon-svg" stroke-dasharray="2 2"/>
-                                <line x1="166" y1="35" x2="180" y2="35" class="icon-svg" stroke-dasharray="2 2"/>
+                                <!-- Ícone Meta Ads -->
+                                <g transform="translate(136, 14.6) scale(1.2)">
+                                    <path d="M 23 8 C 18 8, 14 11, 11.5 15 C 9 11, 5 8, 0 8 C -5 8, -8 12, -8 17 C -8 22, -5 26, 0 26 C 5 26, 9 23, 11.5 19 C 14 23, 18 26, 23 26 C 28 26, 31 22, 31 17 C 31 12, 28 8, 23 8 Z M 23 23 C 19 23, 16 20, 14 17 C 16 14, 19 11, 23 11 C 26 11, 28 14, 28 17 C 28 20, 26 23, 23 23 Z M 0 23 C -3 23, -5 20, -5 17 C -5 14, -3 11, 0 11 C 4 11, 7 14, 9 17 C 7 20, 4 23, 0 23 Z" fill="rgba(255,255,255,0.9)"/>
+                                </g>
                                 
                                 <text x="150" y="75" text-anchor="middle" class="title-svg">Algoritmo Meta Ads</text>
                                 <text x="150" y="95" text-anchor="middle" class="subtitle-svg">Otimização contínua de público</text>
@@ -798,7 +796,10 @@
                             <!-- Etapa 3: WhatsApp -->
                             <g transform="translate(410, 290)">
                                 <rect x="0" y="0" width="140" height="150" class="card-bg-svg"/>
-                                <path d="M 50 30 h 40 a 10 10 0 0 1 10 10 v 15 a 10 10 0 0 1 -10 10 h -25 l -10 10 v -10 a 10 10 0 0 1 -5 -10 v -15 a 10 10 0 0 1 10 -10 z" class="icon-svg"/>
+                                <g transform="translate(53.2, 23.2) scale(1.6)">
+                                    <path d="M 10 2 C 5.6 2 2 5.6 2 10 C 2 11.7 2.5 13.3 3.4 14.7 L 2 19 L 6.5 17.7 C 7.9 18.5 9.4 19 11 19 C 15.4 19 19 15.4 19 11 C 19 6.6 15.4 2 10 2 Z" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="1.2"/>
+                                    <path d="M 7 7 C 7 6.5 7.5 6 8 6 C 8.3 6 8.5 6.1 8.7 6.5 L 9.4 8 C 9.5 8.2 9.5 8.5 9.3 8.7 L 8.6 9.4 C 9 10.5 10 11.5 11 12 L 11.8 11.2 C 12 11 12.3 10.9 12.5 11.1 L 14.1 11.8 C 14.5 12 14.6 12.2 14.6 12.5 C 14.6 13 14 13.6 13.5 13.6 C 12 13.6 8.5 12 6.5 9 C 6.2 8.5 7 8.5 7 7 Z" fill="rgba(255,255,255,0.8)"/>
+                                </g>
                                 <text x="70" y="85" text-anchor="middle" class="title-svg">3. WhatsApp</text>
                                 <text x="70" y="105" text-anchor="middle" class="subtitle-svg">Inicia Conversa</text>
                                 <rect x="30" y="120" width="80" height="24" fill="rgba(255,255,255,0.1)" rx="12"/>
@@ -831,6 +832,11 @@
                                 <text x="70" y="136" text-anchor="middle" class="capi-tag">API: Purchase</text>
                             </g>
                         </svg>
+                        
+                        <!-- Botão de Expandir -->
+                        <button onclick="openInfographic()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-blue-500/30 hover:border-blue-500/50 transition-all opacity-0 group-hover:opacity-100 shadow-xl backdrop-blur-md z-20" title="Expandir Infográfico">
+                            <i class="fi fi-rr-expand text-lg pointer-events-none"></i>
+                        </button>
                     </div>
                 </div>
 
@@ -862,6 +868,45 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Infográfico Modal -->
+            <div id="infografico-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 lg:p-12 transition-all opacity-0 pointer-events-none" style="transition: opacity 0.3s ease;">
+                <button onclick="closeInfographic()" class="absolute top-6 right-6 lg:top-10 lg:right-10 w-12 h-12 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-red-500/30 transition-all z-10">
+                    <i class="fi fi-rr-cross text-xl pointer-events-none"></i>
+                </button>
+                <div class="w-full max-w-7xl max-h-[90vh] bg-black/60 border border-white/10 rounded-2xl p-6 lg:p-12 overflow-auto shadow-2xl relative">
+                    <div id="modal-svg-container" class="w-full h-full flex items-center justify-center min-w-[800px]">
+                        <!-- SVG injected here via JS -->
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function openInfographic() {
+                    const modal = document.getElementById('infografico-modal');
+                    const modalContainer = document.getElementById('modal-svg-container');
+                    const originalSvg = document.getElementById('infografico-inteligencia').outerHTML;
+                    
+                    // Remove sizing classes to let it grow in the modal
+                    let enlargedSvg = originalSvg.replace('max-h-[350px]', 'max-h-[85vh]');
+                    enlargedSvg = enlargedSvg.replace('id="infografico-inteligencia"', '');
+                    
+                    modalContainer.innerHTML = enlargedSvg;
+                    
+                    modal.classList.remove('hidden', 'pointer-events-none');
+                    modal.classList.add('flex');
+                    setTimeout(() => modal.classList.remove('opacity-0'), 10);
+                }
+                function closeInfographic() {
+                    const modal = document.getElementById('infografico-modal');
+                    modal.classList.add('opacity-0');
+                    setTimeout(() => {
+                        modal.classList.remove('flex');
+                        modal.classList.add('hidden', 'pointer-events-none');
+                        document.getElementById('modal-svg-container').innerHTML = '';
+                    }, 300);
+                }
+            </script>
         </main>
     </section>
 
