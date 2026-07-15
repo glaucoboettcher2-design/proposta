@@ -910,14 +910,119 @@
         </main>
     </section>
 
-    <!-- Slide 7: Custos e Investimento -->
+    <!-- Slide 7: Pós-venda e Recorrência -->
+    <section class="slide-container">
+        <main class="apple-panel border-gradient-panel w-full max-w-[1300px] min-h-[600px] p-10 lg:p-12 flex flex-col justify-center relative z-10">
+            
+            <!-- Top Header -->
+            <div class="mb-8 w-full max-w-5xl">
+                <div class="flex items-center text-[13px] sm:text-sm font-medium uppercase tracking-tight text-blue-400 mb-3 gap-4">
+                    <span>Expansão</span>
+                    <div class="h-px flex-grow bg-gradient-to-r from-blue-400/30 to-transparent"></div>
+                    <span>(06)</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl mb-4 font-semibold text-white">Pós-venda e recorrência</h2>
+                <p class="text-lg text-neutral-300 font-light leading-relaxed max-w-4xl">
+                    <strong class="text-white font-medium text-xl mr-1">Cada cliente pode trazer o próximo.</strong> Quem se credencia conhece outros profissionais no mesmo caminho. Um programa de indicação estruturado transforma clientes atendidos em fonte de novos interessados. Em paralelo, a base de contatos já existente, formada por pessoas que demonstraram interesse e não fecharam, recebe uma estratégia dedicada de reativação.
+                </p>
+            </div>
+
+            <!-- Bottom Section: 2 Columns -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 w-full items-center">
+                
+                <!-- Graphic (SVG Ciclo) -->
+                <div class="lg:col-span-7 flex flex-col gap-4">
+                    <div class="apple-card border-gradient p-4 lg:p-6 bg-black/20 flex items-center justify-center w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" class="w-full h-auto max-h-[350px]">
+                            <defs>
+                                <linearGradient id="cycleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="rgba(255,255,255,0.1)" />
+                                    <stop offset="50%" stop-color="rgba(255,255,255,0.8)" />
+                                    <stop offset="100%" stop-color="rgba(255,255,255,0.1)" />
+                                </linearGradient>
+                            </defs>
+                            <style>
+                                .title-svg { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: 600; fill: rgba(255, 255, 255, 0.9); }
+                                .subtitle-svg { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 400; fill: rgba(255, 255, 255, 0.6); }
+                                .card-bg-svg { fill: rgba(255, 255, 255, 0.05); stroke: rgba(255, 255, 255, 0.15); stroke-width: 1; rx: 12px; }
+                                .icon-svg { stroke: rgba(255, 255, 255, 0.8); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                .path-line { stroke: url(#cycleGrad); stroke-width: 3; fill: none; stroke-dasharray: 8 8; }
+                            </style>
+
+                            <!-- Node 1: Cliente Atendido -->
+                            <g transform="translate(180, 80)">
+                                <rect x="0" y="0" width="160" height="120" class="card-bg-svg"/>
+                                <circle cx="80" cy="45" r="16" class="icon-svg"/>
+                                <path d="M 64 75 Q 80 55 96 75" class="icon-svg"/>
+                                <text x="80" y="95" text-anchor="middle" class="title-svg">Cliente Atual</text>
+                            </g>
+
+                            <!-- Node 2: Base Existente -->
+                            <g transform="translate(180, 280)">
+                                <rect x="0" y="0" width="160" height="120" class="card-bg-svg"/>
+                                <rect x="60" y="30" width="40" height="30" class="icon-svg" rx="4"/>
+                                <line x1="60" y1="40" x2="100" y2="40" class="icon-svg"/>
+                                <text x="80" y="95" text-anchor="middle" class="title-svg">Base Fria</text>
+                            </g>
+
+                            <!-- Node Central/Output: Novo Negócio -->
+                            <g transform="translate(620, 180)">
+                                <rect x="0" y="0" width="160" height="120" class="card-bg-svg" fill="rgba(255,255,255,0.08)"/>
+                                <circle cx="80" cy="45" r="18" class="icon-svg"/>
+                                <line x1="70" y1="45" x2="90" y2="45" class="icon-svg"/>
+                                <line x1="80" y1="35" x2="80" y2="55" class="icon-svg"/>
+                                <text x="80" y="95" text-anchor="middle" class="title-svg">Novas Vendas</text>
+                            </g>
+
+                            <!-- Arrows connecting them -->
+                            <!-- Indicação -->
+                            <path d="M 340 140 C 480 140, 480 220, 620 220" class="path-line"/>
+                            <!-- Reativação -->
+                            <path d="M 340 340 C 480 340, 480 260, 620 260" class="path-line"/>
+
+                            <!-- Labels nas linhas -->
+                            <rect x="420" y="150" width="120" height="30" fill="rgba(0,0,0,0.8)" rx="15" stroke="rgba(255,255,255,0.2)"/>
+                            <text x="480" y="170" text-anchor="middle" class="subtitle-svg" style="font-size: 12px; font-weight: 600;">Indicação</text>
+
+                            <rect x="420" y="300" width="120" height="30" fill="rgba(0,0,0,0.8)" rx="15" stroke="rgba(255,255,255,0.2)"/>
+                            <text x="480" y="320" text-anchor="middle" class="subtitle-svg" style="font-size: 12px; font-weight: 600;">Reativação</text>
+
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Entregáveis (List) -->
+                <div class="lg:col-span-5 flex flex-col justify-center lg:pl-6">
+                    <h3 class="text-2xl font-medium text-white mb-6 tracking-tight">Os Entregáveis</h3>
+                    <ul class="flex flex-col gap-6">
+                        <li class="flex items-start gap-4 relative group p-4 rounded-xl -mx-4 hover:bg-white/5 transition-colors">
+                            <span class="mt-1 text-blue-400 bg-blue-500/10 rounded-full w-6 h-6 flex items-center justify-center shrink-0 border border-blue-500/20"><i class="fi fi-rr-check text-xs"></i></span>
+                            <div class="pr-10">
+                                <h4 class="text-white font-medium mb-1">Programa de indicação estruturado.</h4>
+                                <p class="text-white/80 text-sm leading-relaxed">Mecanismo de incentivo para que clientes já credenciados indiquem outros profissionais interessados no mesmo caminho.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 relative group p-4 rounded-xl -mx-4 hover:bg-white/5 transition-colors">
+                            <span class="mt-1 text-blue-400 bg-blue-500/10 rounded-full w-6 h-6 flex items-center justify-center shrink-0 border border-blue-500/20"><i class="fi fi-rr-check text-xs"></i></span>
+                            <div class="pr-10">
+                                <h4 class="text-white font-medium mb-1">Estratégia de reativação da base existente.</h4>
+                                <p class="text-white/80 text-sm leading-relaxed">Resgate dos contatos que já demonstraram interesse no funil anterior e não fecharam, um dos caminhos de retorno mais rápido da operação, por já serem leads qualificados.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Slide 8: Custos e Investimento -->
     <section class="slide-container">
         <main class="apple-panel border-gradient-panel w-full max-w-[1300px] min-h-[700px] p-10 lg:p-20 flex flex-col justify-center relative z-10">
             <div class="text-center mb-16">
                 <div class="mb-8 w-full max-w-2xl mx-auto">
                     <div class="flex items-center justify-between text-[13px] sm:text-sm font-medium uppercase tracking-tight text-blue-400 text-left">
                         <span>Transparência</span>
-                        <span>(06)</span>
+                        <span>(07)</span>
                     </div>
                     <div class="mt-3 h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
                 </div>
