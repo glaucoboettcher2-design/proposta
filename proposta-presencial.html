@@ -176,7 +176,10 @@
 
     <!-- Slide 1: Capa -->
     <section class="slide-container relative w-screen h-screen">
-        <main class="flex flex-col w-full max-w-[850px] min-h-[700px] justify-center items-start p-12 lg:p-24 text-left relative z-10 pb-32 pt-12 mr-auto text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+        <!-- Fundo específico para o Slide 1 para permitir o mix-blend-mode -->
+        <div class="absolute inset-0 z-0" style="background-image: linear-gradient(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), url('./Sebrae Ok.jpg'); background-size: cover; background-position: center;"></div>
+        
+        <main class="flex flex-col w-full max-w-[850px] min-h-[700px] justify-center items-start p-12 lg:p-24 text-left relative z-10 pb-32 pt-12 mr-auto mix-blend-difference text-white">
             
             <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/20 backdrop-blur-md px-4 py-2 text-xs text-white mb-8 uppercase tracking-widest" style="border-radius: 9999px;">
                 <span class="font-medium">Proposta Executiva</span>
