@@ -416,6 +416,8 @@
                                 const originalSvg = document.getElementById('infografico-atracao').outerHTML;
                                 
                                 let enlargedSvg = originalSvg.replace('id="infografico-atracao"', '');
+                                enlargedSvg = enlargedSvg.replace('max-h-[350px]', 'max-h-[75vh]');
+                                
                                 modalContainer.innerHTML = enlargedSvg;
                                 
                                 modal.classList.remove('hidden', 'pointer-events-none');
@@ -899,8 +901,8 @@
                 <button onclick="closeInfographic()" class="absolute top-6 right-6 lg:top-10 lg:right-10 w-12 h-12 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-red-500/30 transition-all z-[110] backdrop-blur-md">
                     <i class="fi fi-rr-cross text-xl pointer-events-none"></i>
                 </button>
-                <div id="infografico-modal-content" class="apple-card border-gradient-panel w-full max-w-7xl max-h-[90vh] bg-white/10 backdrop-blur-3xl border border-white/20 rounded-2xl p-6 lg:p-12 overflow-auto shadow-[0_30px_100px_rgba(0,0,0,0.6)] relative transform translate-y-24 scale-95 transition-all duration-500 ease-out opacity-0" onclick="event.stopPropagation()">
-                    <div id="modal-svg-container" class="w-full h-full flex items-center justify-center min-w-[800px]">
+                <div id="infografico-modal-content" class="apple-card border-gradient-panel w-full max-w-7xl max-h-[90vh] bg-white/10 backdrop-blur-3xl border border-white/20 rounded-2xl p-6 lg:p-12 overflow-hidden shadow-[0_30px_100px_rgba(0,0,0,0.6)] relative transform translate-y-24 scale-95 transition-all duration-500 ease-out opacity-0" onclick="event.stopPropagation()">
+                    <div id="modal-svg-container" class="w-full h-full flex items-center justify-center overflow-hidden">
                         <!-- SVG injected here via JS -->
                     </div>
                 </div>
@@ -914,7 +916,7 @@
                     const originalSvg = document.getElementById('infografico-inteligencia').outerHTML;
                     
                     // Remove sizing classes to let it grow in the modal
-                    let enlargedSvg = originalSvg.replace('max-h-[350px]', 'max-h-[85vh]');
+                    let enlargedSvg = originalSvg.replace('max-h-[350px]', 'max-h-[75vh]');
                     enlargedSvg = enlargedSvg.replace('id="infografico-inteligencia"', '');
                     
                     modalContainer.innerHTML = enlargedSvg;
