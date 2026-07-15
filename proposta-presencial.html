@@ -329,8 +329,8 @@
                             <p class="text-white/80 text-sm leading-relaxed">Definição de públicos, ganchos e estruturas de funil testados em paralelo, da captação à página de destino. O funil final não é uma escolha única, mas sim uma rede de combinações testadas simultaneamente.</p>
                         </div>
 
-                        <div class="w-full bg-black/20 rounded-2xl p-6 border border-white/5 shadow-inner">
-                            <svg viewBox="0 0 800 340" class="w-full h-auto font-sans" xmlns="http://www.w3.org/2000/svg">
+                        <div class="w-full bg-black/20 rounded-2xl p-6 border border-white/5 shadow-inner relative group">
+                            <svg id="infografico-atracao" viewBox="0 0 800 340" class="w-full h-auto font-sans" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient id="highlight-node" x1="0%" y1="0%" x2="100%" y2="100%">
                                         <stop offset="0%" stop-color="rgba(96, 165, 250, 0.2)" />
@@ -401,7 +401,27 @@
                                 <p><strong class="text-blue-400 font-medium">Caminho em destaque:</strong> Estático → Prova → Página com VSL, um exemplo de combinação completa.</p>
                                 <p>2 formatos × 3 ganchos × 3 destinos = <strong class="text-white/80 font-medium">18 caminhos possíveis</strong>. A fase de exploração testa as melhores variações, e não uma hipótese isolada.</p>
                             </div>
+                            
+                            <!-- Botão de Expandir -->
+                            <button onclick="openInfographicAtracao()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-blue-500/30 hover:border-blue-500/50 transition-all opacity-0 group-hover:opacity-100 shadow-xl backdrop-blur-md z-20" title="Expandir Infográfico">
+                                <i class="fi fi-rr-expand text-lg pointer-events-none"></i>
+                            </button>
                         </div>
+                        
+                        <script>
+                            function openInfographicAtracao() {
+                                const modal = document.getElementById('infografico-modal');
+                                const modalContainer = document.getElementById('modal-svg-container');
+                                const originalSvg = document.getElementById('infografico-atracao').outerHTML;
+                                
+                                let enlargedSvg = originalSvg.replace('id="infografico-atracao"', '');
+                                modalContainer.innerHTML = enlargedSvg;
+                                
+                                modal.classList.remove('hidden', 'pointer-events-none');
+                                modal.classList.add('flex');
+                                setTimeout(() => modal.classList.remove('opacity-0'), 10);
+                            }
+                        </script>
                     </article>
                     <article class="apple-card border-gradient p-8 relative group">
                         <h4 class="text-xl mb-3 font-medium bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent pr-10">Produção e design de criativos, estáticos e em vídeo.</h4>
