@@ -179,21 +179,21 @@
         <!-- Fundo específico para o Slide 1 para permitir o mix-blend-mode -->
         <div class="absolute inset-0 z-0" style="background-image: linear-gradient(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), url('./Sebrae ok 2.webp'); background-size: cover; background-position: center;"></div>
         
-        <main class="flex flex-col w-full max-w-[850px] min-h-[700px] justify-center items-start p-12 lg:p-24 text-left relative z-10 pb-32 pt-12 mr-auto mix-blend-difference text-white">
+        <main class="flex flex-col w-full max-w-[850px] min-h-[700px] justify-center items-start p-12 lg:p-24 text-left relative z-10 pb-32 pt-12 mr-auto drop-shadow-xl">
             
-            <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/20 backdrop-blur-md px-4 py-2 text-xs text-white mb-8 uppercase tracking-widest" style="border-radius: 9999px;">
+            <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/20 backdrop-blur-md px-4 py-2 text-xs text-slate-300 mb-8 uppercase tracking-widest" style="border-radius: 9999px;">
                 <span class="font-medium">Proposta Executiva</span>
             </div>
 
-            <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] mb-8 font-semibold tracking-tight leading-tight">
+            <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] mb-8 font-semibold tracking-tight leading-tight text-blue-400 drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
                 Estrutura de aquisição e<br>vendas
             </h1>
 
-            <div class="apple-card border-gradient p-8 md:p-10 w-full flex flex-col items-start justify-center text-left rounded-[24px] bg-black/20 backdrop-blur-md">
-                <h2 class="text-2xl md:text-4xl text-white font-semibold mb-4 tracking-tight">
+            <div class="apple-card border-gradient p-8 md:p-10 w-full flex flex-col items-start justify-center text-left rounded-[24px] bg-black/30 backdrop-blur-xl shadow-2xl">
+                <h2 class="text-2xl md:text-4xl text-slate-200 font-semibold mb-4 tracking-tight">
                     para o credenciamento Sebrae.
                 </h2>
-                <p class="text-base md:text-xl text-white/90 max-w-2xl leading-relaxed font-light">
+                <p class="text-base md:text-xl text-slate-400 max-w-2xl leading-relaxed font-light">
                     Proposta de estruturação completa do funil, da atração de interessados à gestão contínua da operação.
                 </p>
             </div>
@@ -1129,17 +1129,17 @@
     <!-- Slide 9: Custos e Investimento -->
     <section class="slide-container">
         <main class="apple-panel border-gradient-panel w-full max-w-[1300px] min-h-[700px] p-10 lg:p-20 flex flex-col justify-center relative z-10">
-            <div class="text-center mb-16">
-                <div class="mb-8 w-full max-w-2xl mx-auto">
-                    <div class="flex items-center justify-between text-[13px] sm:text-sm font-medium uppercase tracking-tight text-blue-400 text-left">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 max-w-6xl mx-auto w-full text-left">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight">
+                    Estimativa de<br/><span class="text-white/80 font-normal">investimento.</span>
+                </h2>
+                <div class="w-full lg:w-72 shrink-0 lg:pb-3">
+                    <div class="flex items-center justify-between text-[13px] sm:text-sm font-medium uppercase tracking-tight text-blue-400">
                         <span>Transparência</span>
                         <span>(08)</span>
                     </div>
-                    <div class="mt-3 h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+                    <div class="mt-3 h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent lg:bg-gradient-to-l lg:from-transparent lg:to-white/20"></div>
                 </div>
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white">
-                    Estimativa de <span class="text-white/80 font-normal">investimento.</span>
-                </h2>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto w-full">
@@ -1148,7 +1148,7 @@
                 <div class="flex flex-col gap-6">
                     <h3 class="text-xl font-medium text-white px-2">Serviço da Agência</h3>
                     
-                    <article class="apple-card border-gradient p-8 flex flex-col relative" style="background: linear-gradient(225deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.04) 100%);">
+                    <article class="apple-card border-gradient p-8 flex flex-col relative cursor-pointer topic-trigger transition-all duration-300 hover:scale-[1.02] hover:bg-white/10 group" data-topic="s8-1" style="background: linear-gradient(225deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.04) 100%);">
                         <span class="inline-flex items-center justify-center bg-blue-400/20 w-10 h-10 rounded-full border-gradient text-blue-300 mb-4">
                             <i class="fi fi-rr-settings text-lg"></i>
                         </span>
@@ -1160,7 +1160,7 @@
                         <span class="text-[11px] text-white/60 mt-1 font-medium">PAGAMENTO ÚNICO</span>
                     </article>
 
-                    <article class="apple-card border-gradient p-8 flex flex-col">
+                    <article class="apple-card border-gradient p-8 flex flex-col cursor-pointer topic-trigger transition-all duration-300 hover:scale-[1.02] hover:bg-white/10 group" data-topic="s8-2">
                         <span class="inline-flex items-center justify-center bg-white/10 w-10 h-10 rounded-full border-gradient text-white mb-4">
                             <i class="fi fi-rr-refresh text-lg"></i>
                         </span>
@@ -1184,7 +1184,7 @@
                 <div class="flex flex-col gap-6">
                     <h3 class="text-xl font-medium text-white px-2">Custos Operacionais <span class="text-sm text-white/60 font-normal ml-2">(Plataformas)</span></h3>
                     
-                    <article class="apple-card border-gradient p-8 flex flex-col">
+                    <article class="apple-card border-gradient p-8 flex flex-col cursor-pointer topic-trigger transition-all duration-300 hover:scale-[1.02] hover:bg-white/10 group" data-topic="s8-3">
                         <ul class="space-y-6">
                             <li class="flex items-start gap-4">
                                 <div class="mt-1 w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
@@ -1218,7 +1218,7 @@
 
                     <h3 class="text-xl font-medium text-white px-2 mt-2">Resumo Consolidado</h3>
                     
-                    <article class="apple-card border-gradient p-8 flex flex-col bg-white/5 relative overflow-hidden">
+                    <article class="apple-card border-gradient p-8 flex flex-col bg-white/5 relative overflow-hidden cursor-pointer topic-trigger transition-all duration-300 hover:scale-[1.02] group" data-topic="s8-4">
                         <!-- Glow effect -->
                         <div class="absolute -inset-24 bg-blue-500/10 blur-3xl rounded-full z-0 pointer-events-none"></div>
                         
@@ -1331,6 +1331,24 @@
         <div id="template-s5-3">
             <h3 class="text-3xl font-semibold bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent mb-6">Cadências de follow-up</h3>
             <p class="text-white/80 leading-relaxed font-light text-lg">Endereçando diretamente o ponto onde historicamente mais se perde venda: a condução, não a geração do lead.</p>
+        </div>
+
+        <!-- Slide 8 -->
+        <div id="template-s8-1">
+            <h3 class="text-3xl font-semibold bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent mb-6">Estruturação Inicial Completa</h3>
+            <p class="text-white/80 leading-relaxed font-light text-lg">Desenvolvimento ponta a ponta da estrutura comercial e de marketing. Inclui o mapeamento do funil, criação da Landing Page e VSL, configuração do CRM, rastreamento avançado de dados com Pixel e API de conversões, e alinhamento do processo comercial para garantir que todos os leads sejam tratados com excelência.</p>
+        </div>
+        <div id="template-s8-2">
+            <h3 class="text-3xl font-semibold bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent mb-6">Operação Contínua e Gestão</h3>
+            <p class="text-white/80 leading-relaxed font-light text-lg">Gestão ativa de mídia paga, otimização diária de campanhas, acompanhamento das métricas de conversão e suporte estratégico contínuo. Oferecemos dois formatos para se adequar ao momento do negócio: um formato mais previsível (fixo) e outro focado no risco compartilhado e performance (fixo + comissionamento).</p>
+        </div>
+        <div id="template-s8-3">
+            <h3 class="text-3xl font-semibold bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent mb-6">Custos Operacionais</h3>
+            <p class="text-white/80 leading-relaxed font-light text-lg">Os custos operacionais cobrem as ferramentas necessárias para a engrenagem funcionar. A verba de mídia é investida diretamente na plataforma (Meta Ads). O CRM organiza o fluxo de vendas de forma profissional. A produção audiovisual garante que os materiais das campanhas tenham a mais alta qualidade para converter.</p>
+        </div>
+        <div id="template-s8-4">
+            <h3 class="text-3xl font-semibold bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent mb-6">Resumo e Previsibilidade</h3>
+            <p class="text-white/80 leading-relaxed font-light text-lg">Esta visão consolidada permite um planejamento financeiro claro. O Mês 1 concentra o esforço e investimento na construção da máquina. A partir do Mês 2, entramos em velocidade de cruzeiro, focando apenas na manutenção e melhoria contínua dos resultados gerados pelo sistema implementado.</p>
         </div>
     </div>
 
